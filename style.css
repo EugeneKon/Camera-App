@@ -4,13 +4,6 @@ html, body{
   height: 100%;
   width: 100%;
 }
-@media only screen and (orientation:portrait){
-    body {
-        height: 100%;
-        width: 100%;
-      transform: rotate(90deg);
-    }
-  }
 :-webkit-full-screen
 :-moz-full-screen
 :-ms-fullscreen
