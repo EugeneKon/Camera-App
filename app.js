@@ -42,8 +42,9 @@ function openFullscreen() {
     } else if (elem.msRequestFullscreen) { /* IE/Edge */
       elem.msRequestFullscreen();
     }
+    setTimeout(function() { window.scrollTo(0, 1) }, 100);
   }
-setTimeout(function() { window.scrollTo(0, 1) }, 100);
+
 // Start the video stream when the window loads
 window.addEventListener("orientationchange",openFullscreen);
 window.addEventListener("load", cameraStart, false);
