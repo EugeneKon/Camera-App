@@ -6,7 +6,16 @@ html, body{
 }
 @media only screen and (orientation:portrait){
     body {
-        transform: rotate(90deg);
+      
+      transform: rotate(90deg);
+    }
+    #camera, #camera--view, #camera--sensor, #camera--output{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding:2px;
+        border:1px solid black;
     }
   }
 #camera, #camera--view, #camera--sensor, #camera--output{
