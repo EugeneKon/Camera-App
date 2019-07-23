@@ -32,9 +32,9 @@ cameraTrigger.onclick = function() {
 };
 
 // Start the video stream when the window loads
-lockedAllowed = window.screen.lockOrientation('landscape');
+window.screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 window.addEventListener("load", cameraStart, false);
-screen.addEventListener("orientationchange", function () {
+window.addEventListener("orientationchange", function () {
     console.log("The orientation of the screen is: " + screen.orientation);
   });
     
