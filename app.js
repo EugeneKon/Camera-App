@@ -32,21 +32,8 @@ cameraTrigger.onclick = function() {
 };
 
 
-function hideAddressBar()
-{
-  if(!window.location.hash)
-  {
-      if(document.height < window.outerHeight)
-      {
-          document.body.style.height = (window.outerHeight + 50) + 'px';
-      }
-
-      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-  }
-}
 
 // Start the video stream when the window loads
-window.screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 window.addEventListener("load", cameraStart, false);
-window.addEventListener("orientationchange",hideAddressBar);
+
     
