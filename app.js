@@ -33,7 +33,6 @@ cameraTrigger.onclick = function() {
 
 // Start the video stream when the window loads
 window.screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-ScreenOrientation.lock('landscape')
 window.addEventListener("load", cameraStart, false);
 window.addEventListener("orientationchange", function () {
     console.log("The orientation of the screen is: " + screen.orientation);
