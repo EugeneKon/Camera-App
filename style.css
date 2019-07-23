@@ -12,7 +12,18 @@ html, body{
     #toolbar {
         width: 100%;
       }
+    .playfield { display: block; }
+    .overlay { display: none; }
   }
+  @media screen and (orientation: landscape) {
+    #toolbar {
+      position: fixed;
+      width: 2.65em;
+      height: 100%;
+    }
+    .playfield { display: none; }
+    .overlay { display: block; }
+}
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
     height: 100%;
