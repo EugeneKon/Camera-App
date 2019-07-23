@@ -4,10 +4,7 @@ html, body{
   height: 100%;
   width: 100%;
 }
-:-webkit-full-screen
-:-moz-full-screen
-:-ms-fullscreen
-:fullscreen
+
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
     height: 100%;
