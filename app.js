@@ -30,6 +30,12 @@ cameraTrigger.onclick = function() {
     cameraOutput.classList.add("taken");
     // track.stop();
 };
-
+screen.lockOrientation('landscape');
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
+screen.addEventListener("orientationchange", function () {
+    console.log("The orientation of the screen is: " + screen.orientation);
+  });
+  
+   
+  
