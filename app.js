@@ -45,7 +45,7 @@ function openFullscreen() {
   }
 
 // Start the video stream when the window loads
-window.addEventListener("orientationchange",openFullscreen);
+//window.addEventListener("orientationchange",openFullscreen);
 window.addEventListener("load", cameraStart, false);
 
     
