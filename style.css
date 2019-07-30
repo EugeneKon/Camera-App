@@ -4,11 +4,6 @@ html, body{
   height: 100%;
   width: 100%;
 }
-@media only screen and (orientation:portrait){
-
-    }
-   
-  }
 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
