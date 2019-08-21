@@ -1,4 +1,30 @@
 // Set constraints for the video stream
+var imSQL = require('tedious').Connection;
+var sqlRequest = require('tedious').Request;
+var sqlConfig = {
+  server: 'LAP708\SQLSERVER',
+  authentication:{
+    type: 'default',
+    options: {
+      //userName: 'SA',
+      //password: 'eugene@2017@',
+      database: 'TSCA',
+    }
+    
+  },
+  options: {
+    rowCollectionOnDone: true,
+    encrypt: false
+  }
+};
+var isConnected = false;
+var sqlConnection = new imSQL(sqlConfig);
+sqlConnection.on('connect',function(err){
+  console.log('Connected');
+  isConnected = true;
+ 
+
+});
 var constraints = { video: true, audio: false };
 var track = null;
 
